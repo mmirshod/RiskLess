@@ -95,3 +95,4 @@ tqdm~=4.66.1
 platformdirs~=4.1.0
 anyio~=4.2.0
 json5~=0.9.14
+pyjwt~=2.8.0
