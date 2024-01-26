@@ -37,15 +37,17 @@ class User(db.Model):
     first_name = db.Column(db.String(120), nullable=False)
     last_name = db.Column(db.String())
     password_hash = db.Column(db.String(), nullable=False)
-    questionnaire = db.relationship('Questionnaire', backref='user', lazy='select', uselist=False)
+    occupation = db.Column(db.String(120))
+    place_of_work = db.Column(db.String(120))
+    purpose = db.Column(db.String(120))
 
-    def create(self, first_name, last_name, email, password):
+    def create(self, first_name, last_name, email, password, occupation, place_of_work, purpose):
         """Create New User"""
 
         if not validate_user(first_name=first_name, email=email, password=password):
             raise AuthError("Invalid Credentials")
 
-        existing_user = db.session.execute(db.select([User]).where(User.email == email))
+        existing_user = User.get_by_email(email)
         if existing_user:
             raise AuthError("Email already registered")
 
@@ -53,6 +55,9 @@ class User(db.Model):
         self.first_name = first_name
         self.last_name = last_name
         self.password_hash = generate_password_hash(password=password)
+        self.occupation = occupation
+        self.place_of_work = place_of_work
+        self.purpose = purpose
 
         db.session.add(self)
         db.session.commit()
@@ -60,18 +65,15 @@ class User(db.Model):
 
     @staticmethod
     def get_by_id(user_id):
-        return db.session.execute(db.select([User]).where(User.id == user_id))
+        return db.session.execute(db.select([User]).where(User.id == user_id)).fetchone()[0]
+
+    @staticmethod
+    def get_by_email(email):
+        return db.session.execute(db.select([User]).where(User.email == email)).fetchone()[0]
 
     def check_password(self, password):
-        return check_password_hash(self.password_hash, password)
-
-
-class Questionnaire(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    occupation = db.Column(db.String(120))
-    place_of_work = db.Column(db.String(120))
-    purpose = db.Column(db.String(120))
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+        if not check_password_hash(self.password_hash, password):
+            raise AuthError("Invalid Credentials")
 
 
 class AuthError(Exception):

@@ -58,17 +58,30 @@ def get_organisation(ticker: str):
 
 @app.post('/login')
 def login():
-    user = request.json
-    email = user['email']
-    first_name = user['firstName']
-    last_name = user['lastName']
+    """
+    Login function
+    JSON Format:
+    {
+        "email": str
+        "password": str
+    }
+    :return: JWT Token
+    """
+    try:
+        user = User.get_by_email(request.json['email'])
+        if not user:
+            return {'error': 'Invalid Credentials'}, 401
 
-    user_data = {'email': email, 'first_name': first_name, 'last_name': last_name}
-    token = encode_jwt(user_data)
+        user.check_password(request.json['password'])
+        user_data = {'email': user.email, 'first_name': user.first_name,
+                     'last_name': user.last_name, 'occupation': user.occupation}
+        token = encode_jwt(user_data)
 
-    return {
-        'token': token.decode('UTF-8')
-    }, 200
+        return {
+            'token': token.decode('UTF-8')
+        }, 200
+    except AuthError as e:
+        return {'error': e.message}, 401
 
 
 @app.post('/register')
@@ -81,8 +94,12 @@ def register():
         "last_name": str
         "email": str
         "password": str
+        "occupation": str
+        "place_of_work": str
+        "purpose": str
     }
     :return:
+    JWT Token
     """
     try:
         user_data = request.json
@@ -90,9 +107,13 @@ def register():
         password = user_data['password']
         first_name = user_data['firstName']
         last_name = user_data['lastName']
+        occupation = user_data['occupation']
+        place_of_work = user_data['place_of_work']
+        purpose = user_data['purpose']
 
-        User().create(first_name=first_name, last_name=last_name, email=email, password=password)
-        token = encode_jwt({'first_name': first_name, 'last_name': last_name, 'email': email})
+        User().create(first_name=first_name, last_name=last_name, email=email, password=password,
+                      occupation=occupation, place_of_work=place_of_work, purpose=purpose)
+        token = encode_jwt({'first_name': first_name, 'last_name': last_name, 'email': email, 'occupation': occupation})
 
         return {
             'token': token.decode('UTF-8')
