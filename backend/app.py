@@ -5,8 +5,9 @@ import jwt
 from flask import Flask, request, current_app
 
 from backend.models import User, AuthError
+from utils import *
 
-with open('../data/tickers.json', 'r') as file:
+with open('../data/reports_ids_tickers.json', 'r') as file:
     TICKERS = json.load(file)
 
 app = Flask(__name__)
@@ -49,6 +50,10 @@ def get_prediction():
 @app.get('/organisations')
 def get_organisations():
     org_type = request.args.get('org_type')
+    organisations = get_orgs_short(org_type)
+    return {
+        'data': organisations
+    }, 200
 
 
 @app.get('/organisations/<ticker>')

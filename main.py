@@ -40,7 +40,7 @@ le_sector = LabelEncoder()
 le_sector.fit(['Healthcare', 'Industrials', 'Consumer', 'Technology', 'Utilities', 'Financial Services',
                'Basic Materials', 'Real Estate', 'Energy', 'Communication Services'])
 X['Sector'] = le_sector.transform(X['Sector'].dropna())
-
+print(X)
 data['Environment Risk Score'] = np.log1p(data['Environment Risk Score'])
 data['Social Risk Score'] = np.log1p(data['Social Risk Score'])
 data['Governance Risk Score'] = np.log1p(data['Governance Risk Score'])
@@ -99,3 +99,4 @@ joblib.dump(rf_model2, os.path.join(sk_models_folder, 'soc_model.pkl'))
 joblib.dump(rf_model3, os.path.join(sk_models_folder, 'gov_model.pkl'))
 
 print(X_train1.shape)
+
