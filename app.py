@@ -3,7 +3,7 @@ import os
 from functools import wraps
 
 import jwt
-from flask import Flask, request, current_app
+from flask import Flask, request, current_app, abort
 from dotenv import load_dotenv
 
 if os.path.exists('.env'):
@@ -49,7 +49,10 @@ def encode_jwt(token):
 def get_prediction():
     ticker = request.args.get('ticker')
     org_type = request.args.get('org_type')
-    org_id = TICKERS['ticker']
+    org_id = TICKERS[ticker]
+    data = get_annual_report(org_id, org_type)
+    pred = preprocess(data)
+    return pred
 
 
 @app.get('/organisations')
@@ -63,7 +66,11 @@ def get_organisations():
 
 @app.get('/organisations/<ticker>')
 def get_organisation(ticker: str):
-    ...
+    try:
+        data = get_orgs_long(TICKERS[ticker])
+        return data
+    except Exception as e:
+        abort(404, message='No such TICKER')
 
 
 @app.post('/login')

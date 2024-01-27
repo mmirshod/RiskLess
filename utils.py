@@ -101,8 +101,12 @@ def get_orgs_short(org_type):
 
 def get_orgs_long(org_id):
     resp = requests.get(f"{ORGS_API_URL}/{org_id}").json()
+    financial_indicators = requests.get(f"https://new-api.openinfo.uz/api/v1/reports/financial_indicators/?organization_id={org_id}").json()
     info = resp
-    return info
+    return {
+        'financial_indicators': financial_indicators,
+        'org_info': info,
+    }
 
 
 if __name__ == '__main__':
