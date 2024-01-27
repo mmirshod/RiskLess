@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 if os.path.exists('.env'):
     load_dotenv()
 
-from backend.models import User, AuthError
+from .models import User, AuthError
 from utils import *
 
 with open('../data/reports_ids_tickers.json', 'r') as file:
