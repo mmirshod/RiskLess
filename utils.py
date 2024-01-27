@@ -20,6 +20,7 @@ SECTOR_MAPPING = {
     'Energy': 8,
     'Communication Services': 9
 }
+
 NAME_SUFFIX_IDS = {
     'bank': 5,
 }
@@ -28,9 +29,23 @@ REPORTS_API_URL = 'https://new-api.openinfo.uz/api/v1/reports'
 ORGS_API_URL = 'https://new-api.openinfo.uz/api/v1/home/organizations'
 
 
+def get_top_five_util(org_ids: list) -> list:
+    net_profits: List[dict[str: float or int]] = []
+
+    for org_id in org_ids:
+        resp = requests.get(f"{REPORTS_API_URL}/financial_indicators?organization_id={org_id}").json()
+        net_profits.append({
+            'org_id': org_id,
+            'net_profit': resp['results'][-1]['net_profit']
+        })
+
+    net_profits = sorted(net_profits, key=lambda x: x['net_profit'], reverse=True)
+    return net_profits[:5]
+
+
 def preprocess(data: dict) -> dict:
     data = pd.DataFrame(data)
-    print(data)
+
     scores: List[float] = [np.expm1(ENV_MODEL.predict(data)[0]), np.expm1(SOC_MODEL.predict(data)[0]), np.expm1(GOV_MODEL.predict(data))[0]]
     scores = [np.round(val, 2) if val < 10 else np.round(val, 1) for val in scores]
 
@@ -43,11 +58,8 @@ def preprocess(data: dict) -> dict:
     return prediction
 
 
-API_URL = 'https://new-api.openinfo.uz/api/v1/reports'
-
-
 def get_annual_report(org_id: int, org_type: str) -> dict:
-    resp = requests.get(f'{API_URL}/{org_type}/annual?page_size=500').json()
+    resp = requests.get(f'{REPORTS_API_URL}/{org_type}/annual?page_size=500').json()
     report_id = None
 
     for org in resp['results']:
@@ -56,7 +68,7 @@ def get_annual_report(org_id: int, org_type: str) -> dict:
             break
 
     if report_id:
-        return requests.get(f'{API_URL}/{org_type}/annual/{report_id}').json()
+        return requests.get(f'{REPORTS_API_URL}/{org_type}/annual/{report_id}').json()
 
 
 def get_test_data(json_data):
@@ -86,6 +98,20 @@ def get_test_data(json_data):
     return data
 
 
+def get_short_org_info(org_id: int):
+    resp = requests.get(f"{ORGS_API_URL}/{org_id}").json()
+    info = {
+        'short_name': resp['short_name_text'],
+        'address': resp['address'],
+        'email': resp['email'],
+        'phone': resp['detailinfo']['phone_number'],
+        'director': resp['detailinfo']['director_name'],
+        'org_id': org_id,
+        'ticker': resp['exchange_ticket_name']
+    }
+    return info
+
+
 def get_orgs_short(org_type):
     organisations_info = []
     suffix_id = NAME_SUFFIX_IDS[org_type]
@@ -94,13 +120,18 @@ def get_orgs_short(org_type):
     i = 2
     while resp:
         for org in resp['results']:
+            ticker = org['exchange_ticket_name']
+            if not ticker or ticker == "-" or ticker == "мавжуд эмас" or ticker == "None":
+                continue
+
             info = {
                 'short_name': org['short_name_text'],
                 'address': org['address'],
                 'email': org['email'],
                 'phone': org['detailinfo']['phone_number'],
                 'director': org['detailinfo']['director_name'],
-                'org_id': org['id']
+                'org_id': org['id'],
+                'ticker': ticker,
             }
             organisations_info.append(info)
 

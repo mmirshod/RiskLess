@@ -69,9 +69,22 @@ def get_organisations():
 def get_organisation(ticker: str):
     try:
         data = get_orgs_long(TICKERS[ticker])
-        return data
+        return data, 200
     except Exception as e:
         abort(404, message='No such TICKER')
+
+
+@app.get('/organisations/top_five')
+def get_top_five():
+    by = request.args.get('by')
+    top5 = get_top_five_util(org_ids=[val for key, val in TICKERS.items()])
+
+    for org in top5:
+        org['org_short_info'] = get_short_org_info(org_id=org['org_id'])
+
+    return {
+        'data': top5,
+    }, 200
 
 
 @app.post('/login')
