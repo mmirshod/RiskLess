@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 
-from .validators import validate_user
+from validators import validate_user
 from werkzeug.security import generate_password_hash, check_password_hash
 
 db = SQLAlchemy()

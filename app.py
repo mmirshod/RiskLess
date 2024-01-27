@@ -9,10 +9,10 @@ from dotenv import load_dotenv
 if os.path.exists('.env'):
     load_dotenv()
 
-from .models import User, AuthError
-from .utils import *
+from models import AuthError, User
+from utils import *
 
-with open('../data/reports_ids_tickers.json', 'r') as file:
+with open('/data/tickers.json', 'r') as file:
     TICKERS = json.load(file)
 
 app = Flask(__name__)

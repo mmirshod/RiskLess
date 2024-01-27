@@ -17,3 +17,4 @@ python-dotenv~=1.0.1
 Werkzeug==3.0.1
 Gunicorn
 flask-sqlalchemy
+requests~=2.31.0

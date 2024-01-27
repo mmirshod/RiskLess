@@ -4,9 +4,9 @@ import pandas as pd
 import requests
 from typing import List
 
-ENV_MODEL = joblib.load('../models/model_v2/sk_models/env_model.pkl')
-SOC_MODEL = joblib.load('../models/model_v2/sk_models/soc_model.pkl')
-GOV_MODEL = joblib.load('../models/model_v2/sk_models/gov_model.pkl')
+ENV_MODEL = joblib.load('models/model_v2/sk_models/env_model.pkl')
+SOC_MODEL = joblib.load('models/model_v2/sk_models/soc_model.pkl')
+GOV_MODEL = joblib.load('models/model_v2/sk_models/gov_model.pkl')
 
 SECTOR_MAPPING = {
     'Healthcare': 0,
