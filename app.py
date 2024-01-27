@@ -116,6 +116,8 @@ def login():
         }, 200
     except AuthError as e:
         return {'error': e.message}, 401
+    except Exception as e:
+        return {'error': str(e)}, 401
 
 
 @app.post('/register')
