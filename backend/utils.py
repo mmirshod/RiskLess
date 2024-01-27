@@ -43,14 +43,14 @@ def preprocess(data: dict) -> dict:
 
 
 API_URL = 'https://new-api.openinfo.uz/api/v1/reports/bank/annual'
+
+
 def get_annual_report(org_id: int, org_type: str) -> dict:
     resp = requests.get(f'{API_URL}/{org_type}/annual/{org_id}').json()
     financial_report = resp['financial_results_report']
     total_operating_expenses = financial_report[15853 - 15803]['value']
     total_non_interest_expenses = financial_report[15843 - 15803]['value']
-    total_interest_expenses = financial_report['']['value']
-    total_interest_income = financial_report['']['value']
-    total_non_interest_income = financial_report['']['value']
+    total_interest_expenses = financial_report[15826 - 15803]['value']
 
     data = {
         'Sector': [2.0],  # financial services,
@@ -58,7 +58,7 @@ def get_annual_report(org_id: int, org_type: str) -> dict:
         'Net Income': [financial_report[15860 - 15803]['value']],
         'Selling General Administrative': [total_operating_expenses + total_non_interest_expenses],
         'Gross Profit': [financial_report[15844 - 15803]['value']],
-        'Ebit': [total_interest_expenses - total_operating_expenses],# Earnings before interest and taxes
+        'Ebit': [total_interest_expenses - total_operating_expenses],
         'Operating Income': [financial_report[15857 - 15803]['value']],
         'Interest Expense': [total_interest_expenses],
         'Income Tax Expense': [financial_report[15859 - 15803]['value']],
@@ -69,6 +69,7 @@ def get_annual_report(org_id: int, org_type: str) -> dict:
         'Net Income From Continuing Ops': [financial_report[15858 - 15803]['value']],
         'Net Income Applicable To Common Shares': [financial_report[15860 - 15803]['value']]
     }
+
     return data
 
 
