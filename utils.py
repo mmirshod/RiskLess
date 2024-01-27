@@ -77,7 +77,7 @@ def get_orgs_short(org_type):
     organisations_info = []
     suffix_id = NAME_SUFFIX_IDS[org_type]
     resp = requests.get(f"{ORGS_API_URL}?page_size=50&page=1&name_suffix_id={suffix_id}").json()
-
+    print(resp)
     i = 2
     while resp:
         for org in resp['results']:
@@ -91,8 +91,11 @@ def get_orgs_short(org_type):
             }
             organisations_info.append(info)
 
-            resp = requests.get(f"{ORGS_API_URL}?page_size=50&page={i}&name_suffix_id={suffix_id}").json()
-            i += 1
+        resp = requests.get(f"{ORGS_API_URL}?page_size=50&page={i}&name_suffix_id={suffix_id}")
+        if not resp.status_code == 200:
+            break
+        resp = resp.json()
+        i += 1
     return organisations_info
 
 
