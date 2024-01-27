@@ -132,3 +132,7 @@ def register():
         return {
             'error': str(e)
         }, 401
+
+
+if __name__ == '__main__':
+    app.run()
