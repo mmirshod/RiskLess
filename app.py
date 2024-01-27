@@ -12,7 +12,7 @@ if os.path.exists('.env'):
 from models import AuthError, User
 from utils import *
 
-with open('/data/tickers.json', 'r') as file:
+with open('data/tickers.json', 'r') as file:
     TICKERS = json.load(file)
 
 app = Flask(__name__)
