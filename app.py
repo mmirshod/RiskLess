@@ -140,10 +140,10 @@ def register():
         email = user_data['email']
         password = user_data['password']
         first_name = user_data['firstName']
-        last_name = user_data['lastName']
-        occupation = user_data['occupation']
-        place_of_work = user_data['place_of_work']
-        purpose = user_data['purpose']
+        last_name = user_data.get('lastName', None)
+        occupation = user_data.get('occupation', None)
+        place_of_work = user_data.get('place_of_work', None)
+        purpose = user_data.get('purpose', None)
 
         User().create(first_name=first_name, last_name=last_name, email=email, password=password,
                       occupation=occupation, place_of_work=place_of_work, purpose=purpose)
@@ -155,6 +155,10 @@ def register():
     except AuthError as e:
         return {
             'error': str(e)
+        }, 401
+    except KeyError as ke:
+        return {
+            'error': 'NOT ENOUGH DATA'
         }, 401
 
 
