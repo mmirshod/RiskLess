@@ -82,7 +82,7 @@ y_pred3 = rf_model3.predict(X_test3)
 mse3 = mean_squared_error(y_test3, y_pred3)
 r2_score3 = r2_score(y_test3, y_pred3)
 
-# print(f'Metrics for Governance Risk Score\nMSE: {mse3}\nRMSE: {np.sqrt(mse3)}\nR-squared Score: {r2_score3}')
+print(f'Metrics for Governance Risk Score\nMSE: {mse3}\nRMSE: {np.sqrt(mse3)}\nR-squared Score: {r2_score3}')
 
 # Directory paths
 sk_models_folder = 'models/model_v2/sk_models/'

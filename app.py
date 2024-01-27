@@ -50,8 +50,9 @@ def get_prediction():
     ticker = request.args.get('ticker')
     org_type = request.args.get('org_type')
     org_id = TICKERS[ticker]
-    data = get_annual_report(org_id, org_type)
-    pred = preprocess(data)
+    annual_report = get_annual_report(org_id, org_type)
+    pred_data = get_test_data(annual_report)
+    pred = preprocess(pred_data)
     return pred
 
 
@@ -142,4 +143,4 @@ def register():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
