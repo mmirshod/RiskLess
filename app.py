@@ -46,6 +46,7 @@ def encode_jwt(token):
 
 
 @app.get('/predict')
+@token_required
 def get_prediction():
     ticker = request.args.get('ticker')
     org_type = request.args.get('org_type')
@@ -57,6 +58,7 @@ def get_prediction():
 
 
 @app.get('/organisations')
+@token_required
 def get_organisations():
     org_type = request.args.get('org_type')
     organisations = get_orgs_short(org_type)
@@ -66,6 +68,7 @@ def get_organisations():
 
 
 @app.get('/organisations/<ticker>')
+@token_required
 def get_organisation(ticker: str):
     try:
         data = get_orgs_long(TICKERS[ticker])
@@ -75,8 +78,8 @@ def get_organisation(ticker: str):
 
 
 @app.get('/organisations/top_five')
+@token_required
 def get_top_five():
-    by = request.args.get('by')
     top5 = get_top_five_util(org_ids=[val for key, val in TICKERS.items()])
 
     for org in top5:
@@ -156,4 +159,4 @@ def register():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, ssl_context='adhoc')
