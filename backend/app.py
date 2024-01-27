@@ -1,8 +1,13 @@
 import json
+import os
 from functools import wraps
 
 import jwt
 from flask import Flask, request, current_app
+from dotenv import load_dotenv
+
+if os.path.exists('.env'):
+    load_dotenv()
 
 from backend.models import User, AuthError
 from utils import *
@@ -11,7 +16,7 @@ with open('../data/reports_ids_tickers.json', 'r') as file:
     TICKERS = json.load(file)
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'this is a secret'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
 
 def token_required(f):
