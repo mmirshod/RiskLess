@@ -1,6 +1,5 @@
 import json
 import os
-import secrets
 from functools import wraps
 
 import jwt
@@ -14,14 +13,13 @@ from models import AuthError, User, setup_db
 from utils import *
 
 # Generate a secure random string of length 32 (you can adjust the length as needed)
-secret_key = secrets.token_hex(32)
+SECRET_KEY = '4fe486cdd13583e85ab2596456aae584ebc01041d92d43f4a244b82dcfe817a0'
 
 with open('data/tickers.json', 'r') as file:
     TICKERS = json.load(file)
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = secret_key
-
+app.config['SECRET_KEY'] = SECRET_KEY
 
 setup_db(app)
 
@@ -38,24 +36,24 @@ def token_required(f):
             # Decode JWT token
             token: str = token.split(' ')[1]
             print(token)
-            user_data = jwt.decode(token, secret_key, algorithms=['HS256'])
+            user_data = jwt.decode(token, SECRET_KEY, algorithms=['HS256'])
         except jwt.ExpiredSignatureError:
             return {'message': 'Token is expired'}, 401
-        except jwt.InvalidTokenError:
-            return {'message': 'Invalid token'}, 401
+        except jwt.InvalidTokenError as e:
+            return {'message': e}, 401
 
         # Pass the decoded user data to the function
-        return f(user_data, *args, **kwargs)
+        return f(*args, **kwargs)
 
     return decorated_function
 
 
 def encode_jwt(payload: dict):
-    return jwt.encode(payload=payload, key=secret_key, algorithm='HS256')
+    return jwt.encode(payload=payload, key=SECRET_KEY, algorithm='HS256')
 
 
 @app.get('/predict')
-# @token_required
+@token_required
 def get_prediction():
     ticker = request.args.get('ticker')
     org_type = request.args.get('org_type')
@@ -67,7 +65,7 @@ def get_prediction():
 
 
 @app.get('/organisations')
-# @token_required
+@token_required
 def get_organisations():
     org_type = request.args.get('org_type')
     organisations = get_orgs_short(org_type)
@@ -77,7 +75,7 @@ def get_organisations():
 
 
 @app.get('/organisations/<ticker>')
-# @token_required
+@token_required
 def get_organisation(ticker: str):
     try:
         data = get_orgs_long(TICKERS[ticker])
@@ -87,7 +85,7 @@ def get_organisation(ticker: str):
 
 
 @app.get('/organisations/top_five')
-# @token_required
+@token_required
 def get_top_five():
     top5 = get_top_five_util(org_ids=[val for key, val in TICKERS.items()])
 
@@ -155,7 +153,7 @@ def register():
         purpose = user_data.get('purpose', None)
 
         User.create(first_name=first_name, last_name=last_name, email=email, password=password,
-                      occupation=occupation, place_of_work=place_of_work, purpose=purpose)
+                    occupation=occupation, place_of_work=place_of_work, purpose=purpose)
         token = encode_jwt({'email': email})
 
         return {
