@@ -22,3 +22,4 @@ venv/
 .vscode/
 .env
 *.pyc
+instance/

@@ -1,35 +1,44 @@
 import json
 import os
+import secrets
 from functools import wraps
 
 import jwt
-from flask import Flask, request, current_app, abort
+from flask import Flask, request, abort
 from dotenv import load_dotenv
 
 if os.path.exists('.env'):
-    load_dotenv()
+    load_dotenv('.env')
 
-from models import AuthError, User
+from models import AuthError, User, setup_db
 from utils import *
+
+# Generate a secure random string of length 32 (you can adjust the length as needed)
+secret_key = secrets.token_hex(32)
 
 with open('data/tickers.json', 'r') as file:
     TICKERS = json.load(file)
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+app.config['SECRET_KEY'] = secret_key
+
+
+setup_db(app)
 
 
 def token_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        token = request.headers.get('Authorization')
-
+        token: str = request.headers.get('Authorization')
+        print(token)
         if not token:
             return {'message': 'Token is missing'}, 401
 
         try:
             # Decode JWT token
-            user_data = jwt.decode(token, current_app.config['SECRET_KEY'], algorithms=['HS256'])
+            token: str = token.split(' ')[1]
+            print(token)
+            user_data = jwt.decode(token, secret_key, algorithms=['HS256'])
         except jwt.ExpiredSignatureError:
             return {'message': 'Token is expired'}, 401
         except jwt.InvalidTokenError:
@@ -41,12 +50,12 @@ def token_required(f):
     return decorated_function
 
 
-def encode_jwt(token):
-    return jwt.encode(token, app.config['SECRET_KEY'], algorithm='HS256')
+def encode_jwt(payload: dict):
+    return jwt.encode(payload=payload, key=secret_key, algorithm='HS256')
 
 
 @app.get('/predict')
-@token_required
+# @token_required
 def get_prediction():
     ticker = request.args.get('ticker')
     org_type = request.args.get('org_type')
@@ -58,7 +67,7 @@ def get_prediction():
 
 
 @app.get('/organisations')
-@token_required
+# @token_required
 def get_organisations():
     org_type = request.args.get('org_type')
     organisations = get_orgs_short(org_type)
@@ -68,7 +77,7 @@ def get_organisations():
 
 
 @app.get('/organisations/<ticker>')
-@token_required
+# @token_required
 def get_organisation(ticker: str):
     try:
         data = get_orgs_long(TICKERS[ticker])
@@ -78,7 +87,7 @@ def get_organisation(ticker: str):
 
 
 @app.get('/organisations/top_five')
-@token_required
+# @token_required
 def get_top_five():
     top5 = get_top_five_util(org_ids=[val for key, val in TICKERS.items()])
 
@@ -107,12 +116,10 @@ def login():
             return {'error': 'Invalid Credentials'}, 401
 
         user.check_password(request.json['password'])
-        user_data = {'email': user.email, 'first_name': user.first_name,
-                     'last_name': user.last_name, 'occupation': user.occupation}
-        token = encode_jwt(user_data)
+        token = encode_jwt({'email': user.email})
 
         return {
-            'token': token.decode('UTF-8')
+            'token': token
         }, 200
     except AuthError as e:
         return {'error': e.message}, 401
@@ -147,22 +154,22 @@ def register():
         place_of_work = user_data.get('place_of_work', None)
         purpose = user_data.get('purpose', None)
 
-        User().create(first_name=first_name, last_name=last_name, email=email, password=password,
+        User.create(first_name=first_name, last_name=last_name, email=email, password=password,
                       occupation=occupation, place_of_work=place_of_work, purpose=purpose)
-        token = encode_jwt({'first_name': first_name, 'last_name': last_name, 'email': email, 'occupation': occupation})
+        token = encode_jwt({'email': email})
 
         return {
-            'token': token.decode('UTF-8')
+            'token': token
         }, 201
     except AuthError as e:
         return {
             'error': str(e)
         }, 401
-    except KeyError as ke:
+    except KeyError:
         return {
             'error': 'NOT ENOUGH DATA'
         }, 401
 
 
 if __name__ == '__main__':
-    app.run(debug=True, ssl_context='adhoc')
+    app.run(debug=True)

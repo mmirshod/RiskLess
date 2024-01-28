@@ -17,18 +17,8 @@ def setup_db(app, mode: str = None):
         app.config['SQLALCHEMY_NOTIFICATIONS'] = False
         db.app = app
         db.init_app(app)
-
-
-def db_drop_and_create_all(app):
-    """
-    db_drop_and_create_all()
-        drops the database tables and starts fresh
-        can be used to initialize a clean database
-        !!NOTE you can change the database_filename variable to have multiple versions of a database
-    """
-    with app.app_context():
-        db.drop_all()
-        db.create_all()
+        with app.app_context():
+            db.create_all()
 
 
 class User(db.Model):
@@ -41,7 +31,8 @@ class User(db.Model):
     place_of_work = db.Column(db.String(120))
     purpose = db.Column(db.String(120))
 
-    def create(self, first_name, last_name, email, password, occupation, place_of_work, purpose):
+    @staticmethod
+    def create(first_name, last_name, email, password, occupation, place_of_work, purpose):
         """Create New User"""
 
         if not validate_user(first_name=first_name, email=email, password=password):
@@ -51,25 +42,34 @@ class User(db.Model):
         if existing_user:
             raise AuthError("Email already registered")
 
-        self.email = email
-        self.first_name = first_name
-        self.last_name = last_name
-        self.password_hash = generate_password_hash(password=password)
-        self.occupation = occupation
-        self.place_of_work = place_of_work
-        self.purpose = purpose
+        user = User()
+        user.email = email
+        user.first_name = first_name
+        user.last_name = last_name
+        user.password_hash = generate_password_hash(password=password)
+        user.occupation = occupation
+        user.place_of_work = place_of_work
+        user.purpose = purpose
 
-        db.session.add(self)
+        db.session.add(user)
         db.session.commit()
         return True
 
     @staticmethod
     def get_by_id(user_id):
-        return db.session.execute(db.select([User]).where(User.id == user_id)).fetchone()[0]
+        res = db.session.execute(db.select(User).where(User.id == user_id)).fetchone()
+        if res:
+            return res[0]
+        else:
+            return None
 
     @staticmethod
     def get_by_email(email):
-        return db.session.execute(db.select([User]).where(User.email == email)).fetchone()[0]
+        res = db.session.execute(db.select(User).where(User.email == email)).fetchone()
+        if res:
+            user = res[0]
+            return user
+        return None
 
     def check_password(self, password):
         if not check_password_hash(self.password_hash, password):
