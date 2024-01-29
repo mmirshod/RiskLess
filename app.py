@@ -13,7 +13,7 @@ from models import AuthError, User, setup_db
 from utils import *
 
 # Generate a secure random string of length 32 (you can adjust the length as needed)
-SECRET_KEY = ''
+SECRET_KEY = '4fe486cdd13583e85ab2596456aae584ebc01041d92d43f4a244b82dcfe817a0'
 
 with open('data/tickers.json', 'r') as file:
     TICKERS = json.load(file)
