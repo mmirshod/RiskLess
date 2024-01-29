@@ -1,0 +1,1729 @@
+{
+    "id": 301,
+    "parent_id": 20651,
+    "organization": {
+        "id": 29,
+        "full_name_text": "\"Kapitalbank\" aksiyadorlik tijorat banki",
+        "short_name_text": "\"Kapitalbank\" ATB",
+        "exchange_ticket_name": "KPBA, KPB4",
+        "location": "г. Ташкент, Юнусабадский район, ул.Сайилгох, д.7",
+        "address": "г. Ташкент, Юнусабадский район, ул.Сайилгох, д.7",
+        "email": "info@kapitalbank.uz",
+        "web_site": "www.kapitalbank.uz",
+        "name_suffix_id": 5,
+        "responsible_person_id": 190,
+        "inn": 207127843,
+        "status": 1,
+        "account_number": "29802000000001088001",
+        "gov_reg_number": "69",
+        "kfs": 144,
+        "mfo": "1088",
+        "okonx": 96120,
+        "okpo": 23839834,
+        "serving_bank": "Головной офис АКБ \"Капиталбанк\"",
+        "soato": 1726266,
+        "on_maps": "https://www.kapitalbank.uz/ru/contacts/branches/",
+        "region": "14"
+    },
+    "annual_activity_report": [
+        {
+            "id": 1753,
+            "title_id": 646,
+            "title": "Коэффициент рентабельности уставного капитала",
+            "value": "52,8",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 1754,
+            "title_id": 647,
+            "title": "Коэффициент покрытия общий платежеспособности",
+            "value": "198",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 1755,
+            "title_id": 648,
+            "title": "Коэффициент абсолютной ликвидности",
+            "value": "117,03",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 1756,
+            "title_id": 649,
+            "title": "Коэффициент соотношения собственного привлечения и собственных средств",
+            "value": "9,9",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 1758,
+            "title_id": 651,
+            "title": "Соотношение собственных и заемных средств эмитента",
+            "value": "9,9",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        }
+    ],
+    "accrued_income_report": [
+        {
+            "id": 1693,
+            "title_id": 642,
+            "title": "По привилегированным акциям  (в сумах на одну акцию)",
+            "value": "836",
+            "is_title": 0,
+            "is_highlight": 0,
+            "main_report": 301
+        },
+        {
+            "id": 1694,
+            "title_id": 643,
+            "title": "По привилегированным акциям (в процентах к номинальной стоимости одной акции)",
+            "value": "88%",
+            "is_title": 0,
+            "is_highlight": 0,
+            "main_report": 301
+        }
+    ],
+    "existing_debt_report": [],
+    "personnel_change_report": [
+        {
+            "id": 3608,
+            "auth_body": "Общее собрание акционеров",
+            "change_date": "16.05.2022",
+            "chg_result": "2",
+            "personnel_name": "Маматбаев Яхёжон Самижонович",
+            "personnel_responsibility": "член Наблюдательного совета",
+            "start_date": "-",
+            "main_report": 301
+        },
+        {
+            "id": 3609,
+            "auth_body": "Общее собрание акционеров",
+            "change_date": "16.05.2022",
+            "chg_result": "2",
+            "personnel_name": "Гулямов Расулжан Тахирович",
+            "personnel_responsibility": "член Наблюдательного совета",
+            "start_date": "-",
+            "main_report": 301
+        },
+        {
+            "id": 3610,
+            "auth_body": "Общее собрание акционеров",
+            "change_date": "16.05.2022",
+            "chg_result": "1",
+            "personnel_name": "Еникеева Екатерина Александровна",
+            "personnel_responsibility": "член Наблюдательного совета",
+            "start_date": "01.06.2022",
+            "main_report": 301
+        },
+        {
+            "id": 3611,
+            "auth_body": "Общее собрание акционеров",
+            "change_date": "16.05.2022",
+            "chg_result": "1",
+            "personnel_name": "Сабыргалиев Ербол Марленович",
+            "personnel_responsibility": "член Наблюдательного совета",
+            "start_date": "01.06.2022",
+            "main_report": 301
+        },
+        {
+            "id": 3612,
+            "auth_body": "Общее собрание акционеров",
+            "change_date": "16.05.2022",
+            "chg_result": "1",
+            "personnel_name": "Маевский Кирилл Леонидович",
+            "personnel_responsibility": "член Наблюдательного совета",
+            "start_date": "01.06.2022",
+            "main_report": 301
+        },
+        {
+            "id": 3613,
+            "auth_body": "Общее собрание акционеров",
+            "change_date": "16.05.2022",
+            "chg_result": "1",
+            "personnel_name": "Личенко Алексей Вячеславович",
+            "personnel_responsibility": "член Наблюдательного совета",
+            "start_date": "01.06.2022",
+            "main_report": 301
+        },
+        {
+            "id": 3614,
+            "auth_body": "Общее собрание акционеров",
+            "change_date": "16.05.2022",
+            "chg_result": "2",
+            "personnel_name": "Голованов Кирилл Геннадьевич",
+            "personnel_responsibility": "член ревизионной комиссии",
+            "start_date": "-",
+            "main_report": 301
+        },
+        {
+            "id": 3615,
+            "auth_body": "Общее собрание акционеров",
+            "change_date": "16.05.2022",
+            "chg_result": "2",
+            "personnel_name": "Муминов Шарифджон Абдужаборович",
+            "personnel_responsibility": "член ревизионной комиссии",
+            "start_date": "-",
+            "main_report": 301
+        },
+        {
+            "id": 3616,
+            "auth_body": "Общее собрание акционеров",
+            "change_date": "16.05.2022",
+            "chg_result": "2",
+            "personnel_name": "Арапов Бекзод Тавакалович",
+            "personnel_responsibility": "член ревизионной комиссии",
+            "start_date": "-",
+            "main_report": 301
+        },
+        {
+            "id": 3617,
+            "auth_body": "Наблюдательный совет",
+            "change_date": "19.05.2022",
+            "chg_result": "1",
+            "personnel_name": "Исмаилов Сардор Самидуллаевич",
+            "personnel_responsibility": "заместитель Председателя Правления",
+            "start_date": null,
+            "main_report": 301
+        },
+        {
+            "id": 3618,
+            "auth_body": "Наблюдательный совет",
+            "change_date": "17.06.2022",
+            "chg_result": "1",
+            "personnel_name": "Гулямов Расулжан Тахирович",
+            "personnel_responsibility": "заместитель Председателя Правления",
+            "start_date": null,
+            "main_report": 301
+        }
+    ],
+    "additional_stock_submission_report": [
+        {
+            "id": 2029,
+            "title_id": 620,
+            "title": "Орган, принявший решение о выпуске",
+            "value": "Наблюдательный совет",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 2030,
+            "title_id": 621,
+            "title": "Дата и номер государственной регистрации",
+            "value": "РО314-22 от 21.01.2022",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 2031,
+            "title_id": 622,
+            "title": "Количество ценных бумаг (шт.) и объем выпуска (сум)",
+            "value": "32986654 штук, 31337321300 сум",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 2032,
+            "title_id": 623,
+            "title": "Способ размещения ценных бумаг",
+            "value": "закрытая подписка",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 2033,
+            "title_id": 624,
+            "title": "Сроки размещения",
+            "value": "60 дней",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 2034,
+            "title_id": 625,
+            "title": "Дата начала",
+            "value": "21.01.2022",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 2035,
+            "title_id": 626,
+            "title": "Дата окончания",
+            "value": "22.03.2022",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        }
+    ],
+    "facts_report": [
+        {
+            "id": 7651,
+            "date": "10.01.2022",
+            "fact": "Решения, принятые высшим органом управления эмитента",
+            "misc": "10.01.2022",
+            "fact_number": 6,
+            "main_report": 301
+        },
+        {
+            "id": 7652,
+            "date": "10.01.2022",
+            "fact": "Начисление доходов по ценным бумагам",
+            "misc": "10.01.2022",
+            "fact_number": 32,
+            "main_report": 301
+        },
+        {
+            "id": 7653,
+            "date": "12.01.2022",
+            "fact": "Изменения в списке аффилированных лиц",
+            "misc": "12.01.2022",
+            "fact_number": 36,
+            "main_report": 301
+        },
+        {
+            "id": 7654,
+            "date": "20.01.2022",
+            "fact": "Изменения в списке аффилированных лиц",
+            "misc": "20.01.2022",
+            "fact_number": 36,
+            "main_report": 301
+        },
+        {
+            "id": 7655,
+            "date": "21.01.2022",
+            "fact": "Выпуск ценных бумаг",
+            "misc": "21.01.2022",
+            "fact_number": 25,
+            "main_report": 301
+        },
+        {
+            "id": 7656,
+            "date": "14.04.2022",
+            "fact": "Изменение в составе наблюдательного совета, ревизионной комиссии или исполнительного органа",
+            "misc": "14.04.2022",
+            "fact_number": 8,
+            "main_report": 301
+        },
+        {
+            "id": 7657,
+            "date": "14.04.2022",
+            "fact": "Изменения в списке аффилированных лиц",
+            "misc": "14.04.2022",
+            "fact_number": 36,
+            "main_report": 301
+        },
+        {
+            "id": 7658,
+            "date": "18.04.2022",
+            "fact": "Решения, принятые высшим органом управления эмитента",
+            "misc": "18.04.2022",
+            "fact_number": 6,
+            "main_report": 301
+        },
+        {
+            "id": 7659,
+            "date": "18.04.2022",
+            "fact": "Начисление доходов по ценным бумагам",
+            "misc": "18.04.2022",
+            "fact_number": 32,
+            "main_report": 301
+        },
+        {
+            "id": 7660,
+            "date": "13.05.2022",
+            "fact": "Изменение в составе наблюдательного совета, ревизионной комиссии или исполнительного органа",
+            "misc": "13.05.2022",
+            "fact_number": 8,
+            "main_report": 301
+        },
+        {
+            "id": 7661,
+            "date": "16.05.2022",
+            "fact": "Решения, принятые высшим органом управления эмитента",
+            "misc": "16.05.2022",
+            "fact_number": 6,
+            "main_report": 301
+        },
+        {
+            "id": 7662,
+            "date": "16.05.2022",
+            "fact": "Изменение в составе наблюдательного совета, ревизионной комиссии или исполнительного органа",
+            "misc": "16.05.2022",
+            "fact_number": 8,
+            "main_report": 301
+        },
+        {
+            "id": 7663,
+            "date": "16.05.2022",
+            "fact": "Изменения в списке аффилированных лиц",
+            "misc": "16.05.2022",
+            "fact_number": 36,
+            "main_report": 301
+        },
+        {
+            "id": 7664,
+            "date": "19.05.2022",
+            "fact": "Изменение в составе наблюдательного совета, ревизионной комиссии или исполнительного органа",
+            "misc": "19.05.2022",
+            "fact_number": 8,
+            "main_report": 301
+        },
+        {
+            "id": 7665,
+            "date": "19.05.2022",
+            "fact": "Изменения в списке аффилированных лиц",
+            "misc": "19.05.2022",
+            "fact_number": 36,
+            "main_report": 301
+        },
+        {
+            "id": 7666,
+            "date": "17.06.2022",
+            "fact": "Изменение в составе наблюдательного совета, ревизионной комиссии или исполнительного органа",
+            "misc": "17.06.2022",
+            "fact_number": 8,
+            "main_report": 301
+        },
+        {
+            "id": 7667,
+            "date": "17.06.2022",
+            "fact": "Изменения в списке аффилированных лиц",
+            "misc": "17.06.2022",
+            "fact_number": 36,
+            "main_report": 301
+        },
+        {
+            "id": 7668,
+            "date": "07.07.2022",
+            "fact": "Решения, принятые высшим органом управления эмитента",
+            "misc": "07.07.2022",
+            "fact_number": 6,
+            "main_report": 301
+        },
+        {
+            "id": 7669,
+            "date": "07.07.2022",
+            "fact": "Начисление доходов по ценным бумагам",
+            "misc": "07.07.2022",
+            "fact_number": 32,
+            "main_report": 301
+        },
+        {
+            "id": 7670,
+            "date": "23.09.2022",
+            "fact": "Заключение сделки с аффилированным лицом",
+            "misc": "23.09.2022",
+            "fact_number": 21,
+            "main_report": 301
+        },
+        {
+            "id": 7671,
+            "date": "6.10.2022",
+            "fact": "Решения, принятые высшим органом управления эмитента",
+            "misc": "6.10.2022",
+            "fact_number": 6,
+            "main_report": 301
+        },
+        {
+            "id": 7672,
+            "date": "6.10.2022",
+            "fact": "Начисление доходов по ценным бумагам",
+            "misc": "6.10.2022",
+            "fact_number": 32,
+            "main_report": 301
+        },
+        {
+            "id": 7673,
+            "date": "29.11.2022",
+            "fact": "Изменения во владении членов наблюдательного совета акциями эмитента",
+            "misc": "29.11.2022",
+            "fact_number": 34,
+            "main_report": 301
+        },
+        {
+            "id": 7674,
+            "date": "29.11.2022",
+            "fact": "Изменения во владении членов исполнительного органа акциями эмитента",
+            "misc": "29.11.2022",
+            "fact_number": 35,
+            "main_report": 301
+        },
+        {
+            "id": 7675,
+            "date": "29.11.2022",
+            "fact": "Изменения в списке аффилированных лиц",
+            "misc": "29.11.2022",
+            "fact_number": 36,
+            "main_report": 301
+        },
+        {
+            "id": 7676,
+            "date": "01.12.2022",
+            "fact": "Решения, принятые высшим органом управления эмитента",
+            "misc": "01.12.2022",
+            "fact_number": 6,
+            "main_report": 301
+        },
+        {
+            "id": 7677,
+            "date": "01.12.2022",
+            "fact": "Начисление доходов по ценным бумагам",
+            "misc": "01.12.2022",
+            "fact_number": 32,
+            "main_report": 301
+        },
+        {
+            "id": 7678,
+            "date": "30.12.2022",
+            "fact": "Выпуск ценных бумаг",
+            "misc": "30.12.2022",
+            "fact_number": 25,
+            "main_report": 301
+        }
+    ],
+    "balance_sheet_report": [
+        {
+            "id": 16669,
+            "title_id": 178,
+            "title": "АКТИВЫ",
+            "value": "0.00",
+            "is_highlight": 1,
+            "is_title": 1,
+            "main_report": 301
+        },
+        {
+            "id": 16670,
+            "title_id": 179,
+            "title": "1. Кассовая наличность и другие платежные документы ",
+            "value": "1862670343.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16671,
+            "title_id": 180,
+            "title": "2. К получению из ЦБРУ",
+            "value": "4441466519.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16672,
+            "title_id": 181,
+            "title": "3. К получению из других банков",
+            "value": "1700574732.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16673,
+            "title_id": 182,
+            "title": "4. Счета купли и продажи",
+            "value": "2708222650.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16674,
+            "title_id": 183,
+            "title": "     а. Ценные бумаги",
+            "value": "2821052600.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16675,
+            "title_id": 184,
+            "title": "     б. Драгоценные металлы, монеты, камни    ",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16676,
+            "title_id": 185,
+            "title": "     в. Минус: Резерв возможных убытков по счетам купли-продажи    ",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16677,
+            "title_id": 186,
+            "title": "     г. Счета купли-продажи, чистые",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16678,
+            "title_id": 187,
+            "title": "5   а. Инвестиции     ",
+            "value": "101199227.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16679,
+            "title_id": 188,
+            "title": "     б. Минус: Резерв возможных убытков по инвестициям     ",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16680,
+            "title_id": 189,
+            "title": "     в. Инвестиции, чистые",
+            "value": "101199227.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16681,
+            "title_id": 190,
+            "title": "6. Ценные бумаги купленные по соглашению c обратным выкупом",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16682,
+            "title_id": 191,
+            "title": "7. Кредиты и лизинговые операции ",
+            "value": "15408435193.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16683,
+            "title_id": 192,
+            "title": "     а. Брутто кредиты     ",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16684,
+            "title_id": 193,
+            "title": "     б. Лизинговые операции, Брутто     ",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16685,
+            "title_id": 194,
+            "title": "     в. Минус: Резерв возможных убытков по кредитам и лизингу      ",
+            "value": "113734948.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16686,
+            "title_id": 195,
+            "title": "     г. Кредиты и лизинговые операции, чистые",
+            "value": "15294700245.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16687,
+            "title_id": 196,
+            "title": "8   а. Купленные векселя      ",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16688,
+            "title_id": 197,
+            "title": "     б. Минус: Резерв возможных убытков по купленным векселям      ",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16689,
+            "title_id": 198,
+            "title": "     в. Купленные векселя, чистые",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16690,
+            "title_id": 199,
+            "title": "9. Обязательства клиентов по финансовым инструментам",
+            "value": "1173160939.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16691,
+            "title_id": 200,
+            "title": "10. Основные средства, чистые",
+            "value": "833766125.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16692,
+            "title_id": 201,
+            "title": "11. Начисленные проценты к получению",
+            "value": "243253511.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16693,
+            "title_id": 202,
+            "title": "12. Другое собственное имущество банка     ",
+            "value": "26878199.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16694,
+            "title_id": 203,
+            "title": "     а. Инвестиции в недвижимость    ",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16695,
+            "title_id": 204,
+            "title": "     б. Другие активы, приобретенные при кредитных расчетах     ",
+            "value": "20492188.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16696,
+            "title_id": 205,
+            "title": "     в. Минус:Резервы на возможные убытки по другому собственному имуществу банка    ",
+            "value": "1062053.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16697,
+            "title_id": 206,
+            "title": "     г. Чистые, другое собственное имущество банка",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16698,
+            "title_id": 207,
+            "title": "13. Другие активы",
+            "value": "710073455.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16699,
+            "title_id": 208,
+            "title": "14. Итого активов",
+            "value": "28906947045.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16700,
+            "title_id": 209,
+            "title": "ОБЯЗАТЕЛЬСТВА И СОБСТВЕННЫЙ  КАПИТАЛ",
+            "value": "0.00",
+            "is_highlight": 1,
+            "is_title": 1,
+            "main_report": 301
+        },
+        {
+            "id": 16701,
+            "title_id": 210,
+            "title": "ОБЯЗАТЕЛЬСТВА",
+            "value": "0.00",
+            "is_highlight": 1,
+            "is_title": 1,
+            "main_report": 301
+        },
+        {
+            "id": 16702,
+            "title_id": 211,
+            "title": "15. Депозиты до востребования",
+            "value": "9369399229.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16703,
+            "title_id": 212,
+            "title": "16.Сберегательные депозиты",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16704,
+            "title_id": 213,
+            "title": "17. Срочные депозиты ",
+            "value": "14855225596.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16705,
+            "title_id": 214,
+            "title": "18. К оплате в ЦБРУ",
+            "value": "10970615.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16706,
+            "title_id": 215,
+            "title": "19. К оплате в другие банки",
+            "value": "90596815.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16707,
+            "title_id": 216,
+            "title": "20. Ценные бумаги проданные по соглашению с последующим выкупом",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16708,
+            "title_id": 217,
+            "title": "21. Кредиты и лизинговые операции к оплате",
+            "value": "512964885.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16709,
+            "title_id": 218,
+            "title": "22. Субординированные долговые обязательства",
+            "value": "261907362.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16710,
+            "title_id": 219,
+            "title": "23. Начисленные проценты к оплате",
+            "value": "43183819.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16711,
+            "title_id": 220,
+            "title": "24. Другие обязательства",
+            "value": "1115607659.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16712,
+            "title_id": 221,
+            "title": "25. Итого обязательств",
+            "value": "26302203458.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16713,
+            "title_id": 222,
+            "title": "СОБСТВЕННЫЙ  КАПИТАЛ",
+            "value": "0.00",
+            "is_highlight": 1,
+            "is_title": 1,
+            "main_report": 301
+        },
+        {
+            "id": 16714,
+            "title_id": 223,
+            "title": "26. Уставный капитал",
+            "value": "407385173.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16715,
+            "title_id": 224,
+            "title": "     а. Акции - Обыкновенные",
+            "value": "369385173.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16716,
+            "title_id": 225,
+            "title": "     б.Акции - Привилегированные",
+            "value": "38000000.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16717,
+            "title_id": 226,
+            "title": "27. Добавленный капитал",
+            "value": "349727222.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16718,
+            "title_id": 227,
+            "title": "28. Резервный капитал.",
+            "value": "909730962.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16719,
+            "title_id": 228,
+            "title": "     а. Резервный фонд общего назначения ",
+            "value": "905769693.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16720,
+            "title_id": 229,
+            "title": "     а.1. Из них, резервы созданные по стандартным активам",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16721,
+            "title_id": 230,
+            "title": "     б. Резерв на Девальвацию",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16722,
+            "title_id": 231,
+            "title": "     в. Другие резервы и фонды  ",
+            "value": "3961269.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16723,
+            "title_id": 232,
+            "title": "29. Нераспределенная прибыль",
+            "value": "937900230.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16724,
+            "title_id": 233,
+            "title": "30. Итого собственного капитала",
+            "value": "2604743587.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 16725,
+            "title_id": 234,
+            "title": "31. Итого обязательств и собственного капитала",
+            "value": "28906947045.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        }
+    ],
+    "financial_results_report": [
+        {
+            "id": 15803,
+            "title_id": 235,
+            "title": "1. ПРОЦЕНТНЫЕ ДОХОДЫ",
+            "value": "0.00",
+            "is_highlight": 1,
+            "is_title": 1,
+            "main_report": 301
+        },
+        {
+            "id": 15804,
+            "title_id": 236,
+            "title": "    a. Процентные доходы по счетам в ЦБРУ",
+            "value": "5325753.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15805,
+            "title_id": 237,
+            "title": "    б. Процентные доходы по счетам в других банках",
+            "value": "10449605.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15806,
+            "title_id": 238,
+            "title": "    в. Процентные доходы по купленным векселям",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15807,
+            "title_id": 239,
+            "title": "    г. Процентные доходы по инвестициям       ",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15808,
+            "title_id": 240,
+            "title": "    д. Процентные доходы по счетам купли-продажи ценных бумаг",
+            "value": "256571550.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15809,
+            "title_id": 241,
+            "title": "    е. Процентные доходы по обязательствам клиентов",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15810,
+            "title_id": 242,
+            "title": "    ж. Процентные доходы по обяз-вам клиентов по непогашенным акцептам этого банка ",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15811,
+            "title_id": 243,
+            "title": "    з. Процент, Дисконт (Скидки) и взносы по кредитным и лизинговым операциям",
+            "value": "1983213728.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15812,
+            "title_id": 244,
+            "title": "    и. Процентные доходы по соглашениям о покупке ценных бумаг с обратным выкупом",
+            "value": "27993.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15813,
+            "title_id": 245,
+            "title": "    к. Другие процентные доходы",
+            "value": "2253045246.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15814,
+            "title_id": 246,
+            "title": "    л. Итого процентных доходов",
+            "value": "4508633875.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15815,
+            "title_id": 247,
+            "title": "2. ПРОЦЕНТНЫЕ РАСХОДЫ",
+            "value": "0.00",
+            "is_highlight": 1,
+            "is_title": 1,
+            "main_report": 301
+        },
+        {
+            "id": 15816,
+            "title_id": 248,
+            "title": "     а. Процентные расходы по депозитам до востребования",
+            "value": "2626740.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15817,
+            "title_id": 249,
+            "title": "     б. Процентные расходы по сберегательным депозитам",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15818,
+            "title_id": 250,
+            "title": "     в. Процентные расходы по срочным депозитам",
+            "value": "981413544.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15819,
+            "title_id": 251,
+            "title": "     г. Процентные расходы по счетам к оплате в ЦБРУ",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15820,
+            "title_id": 252,
+            "title": "     д. Процентные расходы по счетам к оплате в другие банки",
+            "value": "36288222.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15821,
+            "title_id": 253,
+            "title": "     е. Итого процентных расходов по депозитам",
+            "value": "1020328506.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15822,
+            "title_id": 254,
+            "title": "     ж. Процентные расходы по кредитам к оплате",
+            "value": "17382637.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15823,
+            "title_id": 255,
+            "title": "     з. Процентные расходы по соглашениям о продаже ц/б с последующим выкупом",
+            "value": "10314187.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15824,
+            "title_id": 256,
+            "title": "     и. Другие процентные расходы",
+            "value": "2269426899.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15825,
+            "title_id": 257,
+            "title": "     к. Итого процентных расходов по займам",
+            "value": "2297123723.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15826,
+            "title_id": 258,
+            "title": "     л. Итого процентных расходов",
+            "value": "3317452229.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15827,
+            "title_id": 259,
+            "title": "3. ЧИСТЫЕ ПРОЦЕНТНЫЕ ДОХОДЫ ДО ОЦЕНКИ ВОЗМОЖНЫХ УБЫТКОВ ПО КРЕДИТАМ И ЛИЗИНГУ",
+            "value": "1191181646.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15828,
+            "title_id": 260,
+            "title": "     а. Минус: Оценка возможных убытков по кредитам и лизингу",
+            "value": "262389092.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15829,
+            "title_id": 261,
+            "title": "     б. Чистые процентные доходы после оценки возможных убытков по кредитам и лизингу",
+            "value": "856218638.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15830,
+            "title_id": 262,
+            "title": "4. БЕСПРОЦЕНТНЫЕ ДОХОДЫ",
+            "value": "0.00",
+            "is_highlight": 1,
+            "is_title": 1,
+            "main_report": 301
+        },
+        {
+            "id": 15831,
+            "title_id": 263,
+            "title": "     а. Доходы от комиссий и платы за услуги",
+            "value": "743483295.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15832,
+            "title_id": 264,
+            "title": "     б. Прибыль в иностранной валюте",
+            "value": "1403143098.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15833,
+            "title_id": 265,
+            "title": "     в. Прибыль от коммерческих операций ",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15834,
+            "title_id": 266,
+            "title": "     г. Прибыль и дивиденды от инвестиций",
+            "value": "639586.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15835,
+            "title_id": 267,
+            "title": "     д. Другие беспроцентные доходы",
+            "value": "405051149.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15836,
+            "title_id": 268,
+            "title": "     е. Итого беспроцентных доходов",
+            "value": "2552317128.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15837,
+            "title_id": 269,
+            "title": "5. БЕСПРОЦЕНТНЫЕ РАСХОДЫ",
+            "value": "0.00",
+            "is_highlight": 1,
+            "is_title": 1,
+            "main_report": 301
+        },
+        {
+            "id": 15838,
+            "title_id": 270,
+            "title": "     а. Комиссионные расходы и расходы за услуги",
+            "value": "379950282.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15839,
+            "title_id": 271,
+            "title": "     б. Убытки в иностранной валюте",
+            "value": "830658425.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15840,
+            "title_id": 272,
+            "title": "     в. Убытки по счетам купли-продажи",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15841,
+            "title_id": 273,
+            "title": "     г. Убытки от инвестиций",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15842,
+            "title_id": 274,
+            "title": "     д. Другие беспроцентные расходы",
+            "value": "10263403.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15843,
+            "title_id": 275,
+            "title": "     е. Итого беспроцентных расходов",
+            "value": "1220872110.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15844,
+            "title_id": 276,
+            "title": "6.  ЧИСТЫЙ ДОХОД ДО ОПЕРАЦИОННЫХ РАСХОДОВ",
+            "value": "2187663656.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15845,
+            "title_id": 277,
+            "title": "7. ОПЕРАЦИОННЫЕ РАСХОДЫ",
+            "value": "0.00",
+            "is_highlight": 1,
+            "is_title": 1,
+            "main_report": 301
+        },
+        {
+            "id": 15846,
+            "title_id": 278,
+            "title": "    а. Заработная плата и другие расходы на сотрудников",
+            "value": "398422828.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15847,
+            "title_id": 279,
+            "title": "    б. Аренда и содержание",
+            "value": "60731848.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15848,
+            "title_id": 280,
+            "title": "    в. Командировочные и транспортные расходы",
+            "value": "6207852.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15849,
+            "title_id": 281,
+            "title": "    г. Административные расходы",
+            "value": "51332241.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15850,
+            "title_id": 282,
+            "title": "    д. Репрезентация и благотворительность",
+            "value": "144550763.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15851,
+            "title_id": 283,
+            "title": "    е. Расходы на износ",
+            "value": "79998075.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15852,
+            "title_id": 284,
+            "title": "    ж. Страхование, налоги и другие расходы",
+            "value": "96260387.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15853,
+            "title_id": 285,
+            "title": "    з. Итого операционных расходов",
+            "value": "866350009.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15854,
+            "title_id": 286,
+            "title": "8.  ОЦЕНКА НЕКРЕДИТНЫХ УБЫТКОВ",
+            "value": "0.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15855,
+            "title_id": 287,
+            "title": "9. ЧИСТАЯ ПРИБЫЛЬ ДО УПЛАТЫ НАЛОГОВ И ДРУГИХ ПОПРАВОК",
+            "value": "1321313647.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15856,
+            "title_id": 288,
+            "title": "      а. Оценка налога на прибыль ",
+            "value": "241404336.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15857,
+            "title_id": 289,
+            "title": "10. ДОХОД ДО ВВЕДЕНИЯ ПОПРАВОК",
+            "value": "1079909311.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15858,
+            "title_id": 290,
+            "title": "       а. Непредвиденные доходы или убытки, чистые",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15859,
+            "title_id": 291,
+            "title": "       б. Другие поправки к прибыли, чистые",
+            "value": "0.00",
+            "is_highlight": 0,
+            "is_title": 0,
+            "main_report": 301
+        },
+        {
+            "id": 15860,
+            "title_id": 292,
+            "title": "11. ЧИСТАЯ ПРИБЫЛЬ (УБЫТКИ)",
+            "value": "1079909311.00",
+            "is_highlight": 1,
+            "is_title": 0,
+            "main_report": 301
+        }
+    ],
+    "audition_result_report": [
+        {
+            "id": 251,
+            "auditor_name": "Анвархон Азамов",
+            "conclusion_date": "2023-04-28",
+            "conclusion_file": "audit_conclusion/03._FS_Kapital_Bank_2022_RUS_signed.pdf",
+            "conclusion_number": 1,
+            "conclusion_type": "Положительный",
+            "license_date": "2019-07-22",
+            "license_number": 11,
+            "org_name": "Эрнст энд Янг",
+            "main_report": 301
+        }
+    ],
+    "big_deals_report": [],
+    "affiliates_deal_report": [
+        {
+            "id": 1949,
+            "deal_date": "2022-09-23",
+            "counter_party_name": "PACHURIN VYACHESLAV VLADIMIROVICH",
+            "deal_object": "Ипотечный кредит",
+            "deal_cost": "1530320000",
+            "emitent_body": "Наблюдательный совет",
+            "decision_body": "Заключить сделку с аффилированным лицом",
+            "main_report": 301
+        }
+    ],
+    "affiliates_list_report": [
+        {
+            "id": 6191,
+            "name": "Абдусамадов Махсуд Абдувалиевич",
+            "location": "Р.Узбекистан, г.Ташкент, Мирзо-Улугбекский район",
+            "lg_basis": "Председатель Наблюдательного Совета Банка",
+            "lg_basis_date": "2021-06-21",
+            "main_report": 301
+        },
+        {
+            "id": 6192,
+            "name": "Абдусамадов Равшан Абдувалиевич",
+            "location": "Р.Узбекистан, г.Ташкент, Мирабадский район",
+            "lg_basis": "Член Наблюдательного Совета Банка",
+            "lg_basis_date": "2021-06-21",
+            "main_report": 301
+        },
+        {
+            "id": 6193,
+            "name": "Губайдулин Алексей Фаритович",
+            "location": "Р.Узбекистан, г.Ташкент, Мирзо-Улугбекский район",
+            "lg_basis": "Член Наблюдательного Совета Банка",
+            "lg_basis_date": "2021-06-21",
+            "main_report": 301
+        },
+        {
+            "id": 6194,
+            "name": "Еникеева Екатерина Александровна",
+            "location": "РФ, Московская обл.",
+            "lg_basis": "Член Наблюдательного Совета Банка",
+            "lg_basis_date": "2022-05-16",
+            "main_report": 301
+        },
+        {
+            "id": 6195,
+            "name": "Сабыргалиев Ербол Марленович",
+            "location": "Республика Казахстан",
+            "lg_basis": "Член Наблюдательного Совета Банка",
+            "lg_basis_date": "2022-05-16",
+            "main_report": 301
+        },
+        {
+            "id": 6196,
+            "name": "Маевский Кирилл Леонидович",
+            "location": "РФ, город Москва",
+            "lg_basis": "Член Наблюдательного Совета Банка",
+            "lg_basis_date": "2022-05-16",
+            "main_report": 301
+        },
+        {
+            "id": 6197,
+            "name": "Личенко Алексей Вячеславович",
+            "location": "РФ, город Москва",
+            "lg_basis": "Член Наблюдательного Совета Банка",
+            "lg_basis_date": "2022-05-16",
+            "main_report": 301
+        },
+        {
+            "id": 6198,
+            "name": "Мирзаев Алишер Анварович",
+            "location": "Р.Узбекистан, г.Ташкент, Шайхонтохурский район",
+            "lg_basis": "Председатель Правления",
+            "lg_basis_date": "2020-01-27",
+            "main_report": 301
+        },
+        {
+            "id": 6199,
+            "name": "Рахматов Баходир Содикович",
+            "location": "Р.Узбекистан, г.Ташкент, Юнусабадский район",
+            "lg_basis": "Член Правления Заместитель Председателя Правления",
+            "lg_basis_date": "2019-06-11",
+            "main_report": 301
+        },
+        {
+            "id": 6200,
+            "name": "Глущенко Алексей Павлович",
+            "location": "Республика Каракалпакистан А. Kunnazarov",
+            "lg_basis": "Член Правления Заместитель Председателя Правления",
+            "lg_basis_date": "2019-07-31",
+            "main_report": 301
+        },
+        {
+            "id": 6201,
+            "name": "Тян Константин Владимирович",
+            "location": "Р.Узбекистан, г.Ташкент, Сергелийский район",
+            "lg_basis": "Член Правления Заместитель Председателя Правления",
+            "lg_basis_date": "2019-10-24",
+            "main_report": 301
+        },
+        {
+            "id": 6202,
+            "name": "Исмаилов Сардор Самидуллаевич",
+            "location": "Р.Узбекистан, г. Ташкент, Юнусабадский район",
+            "lg_basis": "Член Правления Заместитель Председателя Правления",
+            "lg_basis_date": "2022-05-19",
+            "main_report": 301
+        },
+        {
+            "id": 6203,
+            "name": "Гулямов Расулжан Тахирович",
+            "location": "Р.Узбекистан, г. Ташкент, Мирзо- Улугбекский район",
+            "lg_basis": "Член Правления Заместитель Председателя Правления",
+            "lg_basis_date": "2022-07-01",
+            "main_report": 301
+        },
+        {
+            "id": 6204,
+            "name": "Аллаёрова Дилрабо Нормаматовна",
+            "location": "Р.Узбекистан, г. Ташкент, Мирзо- Улугбекский район",
+            "lg_basis": "Член Правления Главный бухгалтер банка",
+            "lg_basis_date": "2019-06-27",
+            "main_report": 301
+        },
+        {
+            "id": 6205,
+            "name": "Пачурин Вячеслав Владимирович",
+            "location": "Р.Узбекистан, г.Ташкент, Алмазарский район",
+            "lg_basis": "Член Правления Директор департамента юридической службы",
+            "lg_basis_date": "2019-03-19",
+            "main_report": 301
+        },
+        {
+            "id": 6206,
+            "name": "АО «Uzum Bank»",
+            "location": "Р.Узбекистан, г.Ташкент, Мирабадский район, Фидокор 30",
+            "lg_basis": "Юридическое лицо, являющееся дочерним хозяйственным обществом",
+            "lg_basis_date": "2021-11-01",
+            "main_report": 301
+        },
+        {
+            "id": 6207,
+            "name": "ООО «Телекоминвест»",
+            "location": "Российская Федерация, город Москва, переулок 1-й Тверской-Ямской",
+            "lg_basis": "юридическое лицо, которое владеет двадцатью и более процентами акций банка",
+            "lg_basis_date": "2022-01-12",
+            "main_report": 301
+        },
+        {
+            "id": 6208,
+            "name": "АО «Корус»",
+            "location": "Российская Федерация, город Москва, переулок 1-й Тверской-Ямской",
+            "lg_basis": "юридическое лицо, двадцатью и более процентами в уставном капитале которого владеет то же лицо, что и лицо, которое владеет двадцатью и более процентами в уставном капитале банка",
+            "lg_basis_date": "2022-01-12",
+            "main_report": 301
+        },
+        {
+            "id": 6209,
+            "name": "ООО «Continent Insurance»",
+            "location": "г. Ташкент, Яккасарайский район, ул.Урикзор, дом 7.",
+            "lg_basis": "юридическое лицо, которое владеет двадцатью и более процентами акций банка",
+            "lg_basis_date": "2022-11-29",
+            "main_report": 301
+        }
+    ],
+    "pub_date": "2023-07-10T15:25:28Z",
+    "status": "approved",
+    "emitent_body": "Годовое общее собрание акционеров",
+    "approval_date": "2023-06-26",
+    "approved_date": "2023-07-11T15:53:59Z",
+    "reporting_year": "2022-12-31",
+    "int_report": "int_report/03._FS_Kapital_Bank_2022_RUS_signed.pdf",
+    "author": 190,
+    "section": 2,
+    "type": 1
+}
