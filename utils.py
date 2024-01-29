@@ -25,8 +25,8 @@ NAME_SUFFIX_IDS = {
     'bank': 5,
 }
 
-REPORTS_API_URL = 'https://new-api.openinfo.uz/api/v1/reports'
-ORGS_API_URL = 'https://new-api.openinfo.uz/api/v1/home/organizations'
+REPORTS_API_URL = '<REPORTS_API_URL>'  # Unfortuantely we were asked to hide api urls
+ORGS_API_URL = 'ORGS_API_URL'
 
 
 def get_top_five_util(org_ids: list) -> list:
